@@ -1,0 +1,180 @@
+/* General Styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    background-position: cover;
+    color: #333;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+    
+}
+
+.container {
+    width: 66%;
+    max-width: 1200px;
+    margin: 0 auto 0; 
+}
+
+/* Header Styling */
+
+header {
+    background: whitesmoke;
+    color: #357ABD;
+    text-align: center;
+    position: relative;
+}
+header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-left {
+    flex: 0 0 120px;
+}
+
+header .profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    transition: transform 0.3s ease;
+}
+
+header .profile-photo:hover {
+    transform: scale(1.1);
+}
+
+header .header-right {
+   flex: 1;
+}
+
+header h1 {
+    font-size: 48px;
+    margin: 0;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 16px;
+    margin: 10px 0;
+    
+}
+
+/* Section Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Scroll Effect */
+section {
+    padding: 60px 0;
+    transition: background-color 0.5s ease;
+}
+
+section:hover {
+    background-color: #e3f2fd;
+}
+
+/* Skills and Projects Grid */
+.skills-grid, .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.skill {
+    background-color: #4A90E2;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Button */
+.contact-button {
+    background-color: #4A90E2;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    font-size: 18px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #357ABD;
+}
+
+/* Footer Styling */
+footer {
+    width:110%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* Dark Mode Toggle */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f9;
+}
+
+body.dark-mode header {
+    background: linear-gradient(135deg, #2C3E50, #34495E);
+}
+
+body.dark-mode .skill {
+    background-color: #34495E;
+}
+
+body.dark-mode .project-card {
+    background-color: #2C3E50;
+}
+
+body.dark-mode footer {
+    background-color: #222;
+}
+/* header {
+    background: linear-gradient(135deg, #4A90E2, #357ABD);
+    width:100%;
+    color: white;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}*/
